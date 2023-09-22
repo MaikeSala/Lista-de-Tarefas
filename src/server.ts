@@ -3,11 +3,15 @@ import dotenv from 'dotenv';
 import mustache from 'mustache-express';
 import path from 'path';
 import mainRoutes from './routes/index';
+import cors from 'cors';
 
 dotenv.config();
 
 const server = express();
+
 server.use(express.json());
+
+server.use(cors());
 
 //Consgigurar tamplate engine(mustache)
 
