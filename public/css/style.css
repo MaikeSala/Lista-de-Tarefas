@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #23b499;
+}
+
+main {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.add-form {
+    display: flex;
+    margin-bottom: 50px;
+    gap: 15px;
+    width: 100%;
+}
+
+input {
+    flex: 1;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    box-shadow:  5px 5px 10px 3px  rgba(0, 0, 0, 0.1);
+    outline: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+button[type="submit"] {
+    background-color: rgba(35, 180, 153, 0.5);
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    padding: 10px 15px;
+    border: 1px solid #DDD;
+    text-align: center;
+}
+
+td {
+    color: #333;
+    font-weight: 600;
+}
+tr:nth-child(even) {
+    background-color: #F5F5F5;
+}
+
+select {
+    background-color: rgba(35, 180, 153, 0.5);
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    outline: none;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+select:hover {
+    background-color: rgba(78, 218, 192, 0.5);
+}
+
+.btn-action {
+    border: none;
+    margin: 1px;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.btn-action:nth-child(1) {
+    background-color: orange;
+}
+.btn-action:nth-child(2) {
+    background-color: rgba(237, 42, 42, 0.9);
+}

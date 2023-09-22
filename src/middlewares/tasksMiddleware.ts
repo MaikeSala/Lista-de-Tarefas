@@ -9,12 +9,7 @@ export const validateBody = (req: Request, res: Response, next: NextFunction) =>
     if(body.title === ''){
         return res.status(400).json({message:'Campo title não pode ser vazio'});
     }
-    if(body.status === undefined){
-        return res.status(400).json({message:'Campo status obrigatório'});
-    }
-    if(body.status === ''){
-        return res.status(400).json({message:'Campo status não pode ser vazio'});
-    }
+
 
     next();
 };
