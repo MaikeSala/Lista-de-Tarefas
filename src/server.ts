@@ -7,6 +7,7 @@ import mainRoutes from './routes/index';
 dotenv.config();
 
 const server = express();
+server.use(express.json());
 
 //Consgigurar tamplate engine(mustache)
 
@@ -23,5 +24,6 @@ server.use(mainRoutes);
 server.use((req, res) => {
     res.send('Página não encontrada');
 });
+
 
 server.listen(process.env.PORT);

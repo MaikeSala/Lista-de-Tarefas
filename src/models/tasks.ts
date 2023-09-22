@@ -1,9 +1,3 @@
-/* Funçoes com o banco de dados:
-    Pegar todas as tasks do BD,
-    Adicionar tasks no BD,
-    Atualizar o BD,
-    Deletar tasks no BD.
- */
 import { Model, DataTypes } from "sequelize";
 import { sequelize } from '../instances/mysql';
 
@@ -17,6 +11,7 @@ export interface TasksInstance extends Model {
 export const Task = sequelize.define<TasksInstance>("Task",{
     id: {
         primaryKey: true,
+        autoIncrement: true,
         type: DataTypes.INTEGER
     },
     title: {
@@ -26,7 +21,7 @@ export const Task = sequelize.define<TasksInstance>("Task",{
         type:DataTypes.STRING
     },
     created_at: {
-        type:DataTypes.STRING
+        type:DataTypes.DATE
     }
 }, {
     tableName: 'tasks',
