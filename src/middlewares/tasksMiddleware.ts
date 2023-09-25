@@ -9,7 +9,5 @@ export const validateBody = (req: Request, res: Response, next: NextFunction) =>
     if(body.title === ''){
         return res.status(400).json({message:'Campo title não pode ser vazio'});
     }
-
-
     next();
 };
