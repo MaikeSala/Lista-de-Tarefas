@@ -2,6 +2,7 @@
 Backend e Frontend
 ## Índice
 - <a href="#layout">Layout</a>
+- <a href="#rodar">Como rodar o Projeto</a>
 - <a href="#tecnologias">Tecnologias utilizadas</a>
 - <a href="#autores">Autores</a>
 
@@ -15,6 +16,18 @@ Backend e Frontend
 ## Layout 
 <img style="width:700px" src="./public/images/Pagina 1.png" alt= "Imagem da Calculadora">
 
+## Rodar
+```bash
+# Instalar dependências
+$ npm install
+
+# Executar aplicação
+$ npm run start
+
+# Executar aplicação com nodemon
+$ npm run start-dev
+
+```
 ## Tecnologias
 1. HTML
 2. CSS
